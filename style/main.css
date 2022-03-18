@@ -1,0 +1,116 @@
+:root{ /* raiz do documento, boa pratica*/
+        --vermelho: #e50914;
+        --preto: #141414;
+}
+
+
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /*garante o limite das bordas da caixa */
+}  /* reseta o css padrão do navegador */
+
+
+/*elementos base*/
+
+body{
+ background: var(--preto);
+ font-family: times new 'Times New Roman', Times, serif;
+ color: white;
+}
+
+
+header .container {
+    display: flex; /*joga tudo para a linha*/
+    align-items: center;
+    justify-content: space-between ; /*justifica os elementos*/
+}
+
+header .logo{
+    margin-left: 5px;
+    color: #e50914;
+    font-family: 'Arial Black' ;
+    font-size: 30px;
+    padding: 10px;
+}
+
+header nav a{
+    text-decoration: none; /* remove a linha do link*/
+    color: #aaa;
+    margin-right: 10px;
+}
+
+
+header nav a:hover{
+    color: #fff;
+}
+
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(/img/imagem\ de\ fundo\ batman.jpg);
+
+    height: 400px;
+    background-size: cover; /*area que a imagem ira ocupar na caixa*/
+
+    display: flex; 
+    flex-direction: column; /*inverte os dois itens abaixo*/
+    justify-content: center;
+    align-items: flex-start; /*começa sempre da esquerda*/
+} 
+
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 45px;
+    color: #e50914;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.botao{
+   background-color: rgba(0,0,0,50);
+   border: none;
+   color: white;
+   border-radius: 14px;
+
+   padding: 10px 20px;
+   margin-right: 15px;
+   font-size: 12px;
+
+   cursor: pointer; /*muda o cursor para ponteiro quando passa o mouse por cima*/
+   transition: .3s ease all ; /*cuida da transição entre uma animação e outra*/
+
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+.container{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.filme-principal .container{
+    width: 40%;  /*largura de 40%*/
+}
+
+
+
+
+
+/* # wrapper = envelopar */
